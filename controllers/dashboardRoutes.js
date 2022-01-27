@@ -39,7 +39,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/create/',withAuth, (req,res)=>{
+router.get('/create',withAuth, (req,res)=>{
     res.render('newPost');
 });
 
