@@ -6,7 +6,7 @@ const updateFormHandler = async (event) => {
    window.location.toString().split('/').length - 1
  ];  const post_text = document.querySelector('input[name = "post-text"]').value;
 
-  const response = await fetch(`/api/posts/S{id}`, {
+  const response = await fetch(`/api/posts/${id}`, {
     method: 'PUT',
     body: JSON.stringify({ title, post_text }),
     headers: { 'Content-Type': 'application/json' },
